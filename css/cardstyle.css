@@ -1,0 +1,125 @@
+.card {
+	width: 400px;
+	height: 500px;
+	margin: 30px;
+	padding-top: 10px;
+	border-radius: 16px;
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+	background: rgba(255, 255, 255, 0.1);
+	overflow: hidden;
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	border-left: 1px solid rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(5px);
+	z-index: 1;
+}
+
+.form{
+  padding: 25px 30px;
+}
+
+.form form{
+  margin: 20px 0;
+}
+
+.form form .error-text{
+  color: #721c24;
+  padding: 8px 10px;
+  text-align: center;
+  border-radius: 5px;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.form form .name-details{
+  display: flex;
+}
+
+.form .name-details .field:first-child{
+  margin-right: 10px;
+}
+
+.form .name-details .field:last-child{
+  margin-left: 10px;
+}
+
+.form form .field{
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+  position: relative;
+  padding: 5px 0 5px 0;
+}
+
+.form form .input input{
+  height: 40px;
+  width: 100%;
+  font-size: 16px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: ghostwhite;
+}
+
+.form form .field input{
+  outline: none;
+}
+
+.form form .image input{
+  font-size: 17px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #A3A3A3;
+}
+
+.form form .image label {
+	padding: 10px 0 10px 0;
+	color: #A3A3A3;
+}
+
+.form form .button input{
+  height: 45px;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  background: #333;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 13px;
+}
+
+.form form .button input:hover {
+	color: #2F768A;
+	font-weight: 600;
+}
+
+.form form .field i{
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  color: #ccc;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.form form .field i.active::before{
+  color: #ccc;
+  content: "\f070";
+}
+
+.form .link{
+  text-align: center;
+  margin: 10px 0;
+  font-size: 17px;
+  color: ghostwhite;
+}
+
+.form .link a{
+  color: #2F768A !important;
+  text-decoration: none;
+}
+
+.form .link a:hover{
+  text-decoration: underline;
+}
